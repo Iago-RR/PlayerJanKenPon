@@ -1,0 +1,30 @@
+# Arquivos compilados do Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Pastas de build do Maven e NetBeans
+/target/
+/build/
+/dist/
+
+# Arquivos de log
+*.log
+
+# Arquivos de IDEs genéricos
+.idea/
+.vscode/
+*.iml
+*.project
+*.classpath
+.settings/
+
+# Arquivos específicos do NetBeans
+/nbproject/private/
+/nbbuild/
+/nbdist/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
