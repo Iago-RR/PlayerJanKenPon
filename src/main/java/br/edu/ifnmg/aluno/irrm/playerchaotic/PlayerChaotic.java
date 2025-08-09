@@ -22,20 +22,16 @@ public class PlayerChaotic extends AbstractPlayer{
 
     @Override
     public Move makeMyMove(Move opponentPreviousMove) {
-        double numAleatorio = (int)(Math.random()*10);
+        //double numAleatorio = (int)(Math.random()*10);
         if(opponentPreviousMove == null){
             return Move.NONE;
-        }else{
-            if(numAleatorio < 3 ) return Move.PAPER;
-            else if (numAleatorio < 7) return Move.ROCK;
-            else return Move.SCISSORS; 
-//            
-//            return switch (opponentPreviousMove) {
-//                case Move.ROCK -> Move.PAPER;
-//                case Move.PAPER -> Move.SCISSORS;
-//                case Move.SCISSORS -> Move.ROCK;
-//                    // default devera ser rock 
-//                default -> Move.PAPER; };
+        }else{  
+            return switch (opponentPreviousMove) {
+                case Move.ROCK -> Move.PAPER;
+                case Move.PAPER -> Move.SCISSORS;
+                case Move.SCISSORS -> Move.ROCK;
+                    // default devera ser rock 
+                default -> Move.PAPER; };
             
         }
     }
