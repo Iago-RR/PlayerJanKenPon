@@ -30,8 +30,7 @@ public class PlayerChaotic extends AbstractPlayer{
                 case Move.ROCK -> Move.PAPER;
                 case Move.PAPER -> Move.SCISSORS;
                 case Move.SCISSORS -> Move.ROCK;
-                    // default devera ser rock 
-                default -> Move.PAPER; };
+                default -> Move.ROCK; };
             
         }
     }
