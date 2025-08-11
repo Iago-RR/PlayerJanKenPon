@@ -30,7 +30,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>C:\\Users\\iagor\\Documents\\NetBeansProjects\\JanKenPonManager\\players</outputDirectory>
+                            <outputDirectory>C:\\dev\\projects\\javase\\JanKenPonManager\\players</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>${project.build.directory}</directory>
